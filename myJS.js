@@ -51,7 +51,7 @@ function convertTemp(){
     myF = document.getElementById("f-input").value;
     console.log(myF);
 
-    let myC = (myF-32)*(5/9);
+    let myC = ((myF-32)*(5/9)).toPrecision(3);
     console.log(myC);
 
     //Send the calculated temperature to HTML
